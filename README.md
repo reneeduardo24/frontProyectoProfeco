@@ -1,19 +1,19 @@
 # proyectoProfecoFinal
 Proyecto profeco, Angular Mysql, REST API Node &amp; Typescript
 
-###REQUISITOS
-*MYSQL
-*Node.js
-*Angular
+###REQUISITOS###<br />
+*MYSQL<br />
+*Node.js<br />
+*Angular<br />
 
-### COMO ABRIR EL PROYECTO
--cd server
--npm run build
+### COMO ABRIR EL PROYECTO<br />
+-cd server<br />
+-npm run build<br />
 
-####///----Otra terminal----///
--cd server
--npm run dev
+#### ///----Otra terminal----///<br />
+-cd server<br />
+-npm run dev<br />
 
-####///----Otra terminal----///
--cd frontend
--ng serve
+#### ///----Otra terminal----///<br />
+-cd frontend<br />
+-ng serve<br />
