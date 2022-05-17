@@ -1,0 +1,18 @@
+<div class="col-md-4" *ngFor="let report of reports">
+    <div class="card text-center">
+      <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+        {{report.tienda.toUpperCase()}}
+        <button class="btn btn-danger" (click)="deleteReport(report.id)">
+          <i class="far fa-trash-alt"></i>
+        </button>
+      </div>
+      <img class="card-img-top" [src]="report.image">
+      <div class="card-body">
+        <p>{{report.description.charAt(0).toUpperCase() + report.description.slice(1)}}</p>
+        <p>Creado el {{report.created_at | date: 'yyyy-MM-dd'}}</p>
+        <a [routerLink]="['/reports/edit', report.id]" class="btn btn-info btn-block">
+          EDITAR REPORTE
+        </a>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,29 @@
+<div class="col-md-4 offset-md-4">
+    <div class="card">
+      <div class="card-body">
+        <form action="">
+          <div class="form-group">
+            <input type="text" name="tienda" [(ngModel)]="report.tienda" placeholder="Tienda" class="form-control" autofocus>
+          </div>
+          <div class="form-group">
+            <textarea name="description" [(ngModel)]="report.description" rows="2" placeholder="Descripcion" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="url" name="image URL" [(ngModel)]="report.image" placeholder="Imagen" class="form-control">
+          </div>
+          <button class="btn btn-success btn-block" (click)="edit ? updateReport() : saveNewReport()">
+            Guardar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <div class="card card-body text-center">
+      <img [src]="report.image == '' ? '/assets/noimage.png' : report.image" class="card-img-top">
+        <h3>{{report.id}}. {{report.tienda == '' ? 'Tienda' : report.tienda}}</h3>
+        <p>{{report.description == '' ? 'Descripcion' : report.description}}</p>
+        <p>{{report.created_at | date: 'yyyy-MM-dd'}}</p>
+      </div>
+  </div>
