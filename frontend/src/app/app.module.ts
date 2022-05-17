@@ -9,14 +9,18 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { ReportFormComponent } from './components/report-form/report-form.component';
 import { ReportListComponent } from './components/report-list/report-list.component';
 
-import { ReportsService } from './services/reports.service'
+import { ReportsService } from './services/reports.service';
+import { ListaProductosComponent } from './components/lista-productos/lista-productos.component';
+import { CalificacionesSupersComponent } from './components/calificaciones-supers/calificaciones-supers.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     ReportFormComponent,
-    ReportListComponent
+    ReportListComponent,
+    ListaProductosComponent,
+    CalificacionesSupersComponent
   ],
   imports: [
     BrowserModule,
